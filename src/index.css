@@ -1,4 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@100&display=swap');
+
 body {
+  background-color: #efefef;
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
@@ -10,4 +13,158 @@ body {
 code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}
+
+.h1{
+  font-weight: bold;
+}
+
+.parentContainer{
+  margin: auto;
+  margin-top: 5%;
+  height: 800px;
+  overflow: scroll;
+  width: 50%;
+  background-color: #ffffff;
+  border-radius: 3%;
+  border-style: solid;
+  border-color: grey;
+}
+
+.profileContainer{
+  font-family: 'Raleway', sans-serif;
+  display: flex;
+  flex-direction: row;
+}
+
+.profileContainerDiv{
+  padding-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px
+}
+
+.profileImg{
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 1px solid #e7e7e7;
+}
+
+.divider{
+  border-top: 3px solid #f6f6f6
+}
+
+::-webkit-scrollbar {
+  width: 0px;
+  background: transparent; /* make scrollbar transparent */
+}
+.searchBarContainer{
+  display: flex;
+  justify-content: center;
+}
+.searchBox{
+  width: 98%;
+  height: 70px;
+  border-width: 0 0 2px;
+  border-color: #ececec;
+}
+
+.searchBox::placeholder{
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+}
+
+input {
+  font-family: 'Raleway', sans-serif;
+  font-size: 30px;
+
+}
+
+input:focus {
+  border-color: black;  
+  border-width: 0 0 2px;
+  outline: 1px solid #000
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
+.togglePlus{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+
+.togglePlus::after {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: grey;
+  height: 10px;
+  margin-top: -5px;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  z-index: 9;
+}
+
+.togglePlus::before {
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: grey;
+  width: 10px;
+  margin-left: -5px;
+  left: 50%;
+  top: 5px;
+  bottom: 5px;
+  z-index: 9;
+}
+
+.togglePlus:hover::after{
+  background-color: black;
+}
+
+.togglePlus:hover::before{
+  background-color: black;
+}
+
+.toggleMinus{
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  position: relative;
+}
+.toggleMinus::before{
+  content: " ";
+  position: absolute;
+  display: block;
+  background-color: grey;
+  height: 10px;
+  margin-top: -5px;
+  top: 50%;
+  left: 5px;
+  right: 5px;
+  z-index: 9;
+}
+
+.toggleMinus:hover::before{
+  background-color: black;
+}
+.toggleContainer{
+  margin-left: auto;
+  padding-right: 20px;
+}
+
+.profileName{
+  font-size: 40px;
+  font-weight: bold;
+}
+
+.profileInfo{
+  color: #686568;
+  font-size: 21px;
 }
